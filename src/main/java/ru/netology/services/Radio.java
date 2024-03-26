@@ -64,5 +64,23 @@ public class Radio {
             currentRadioStation = 9;
         }
     }
+    public void increaseVolume() {
+        int nextVolume = currentVolume + 1;
+        if (currentVolume == 100) {
+            setCurrentVolume(100);
+        }
+        if (currentVolume < 100) {
+            setCurrentVolume(nextVolume);
+        }
+    }
 
+    public void decreaseVolume() {
+        int prevVolume = currentVolume - 1;
+        if (currentVolume <= 0) {
+            setCurrentVolume(0);
+        }
+        if (currentVolume > 0) {
+            setCurrentVolume(prevVolume);
+        }
+    }
 }
