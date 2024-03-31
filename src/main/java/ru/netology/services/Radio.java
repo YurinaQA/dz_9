@@ -72,10 +72,7 @@ public class Radio {
         if (currentVolume < 100) {
             setCurrentVolume(nextVolume);
         }
-<<<<<<< HEAD
-=======
         return;
->>>>>>> origin/main
     }
 
     public void decreaseVolume() {
@@ -86,9 +83,6 @@ public class Radio {
         if (currentVolume > 0) {
             setCurrentVolume(prevVolume);
         }
-<<<<<<< HEAD
-=======
         return;
->>>>>>> origin/main
     }
 }
